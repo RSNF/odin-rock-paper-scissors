@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock, Paper & Scissors Game</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -12,23 +15,25 @@
     </header>
     <section>
       <h2>Play the game!</h2>
-      <h3>Players score</h3>
-      <ol>
-        <li class="player">0</li>
-        <li class="computer">0</li>
-      </ol>
-      <div>
-
+      <section>
+        <h3>Players score</h3>
+        <ol>
+          <li class="player">0</li>
+          <li class="computer">0</li>
+        </ol>
+      </section>
+      <div class="game-log"></div>
+      <div class="controls">
+        <img id="rock" src="./assets/noun-fist-477918.svg" width="200">
+        <img id="paper" src="./assets/noun-hand-477922.svg" width="200">
+        <img id="scissors" src="./assets/noun-scissors-477919.svg" width="200">
       </div>
-      <img id="rock" src="./assets/noun-fist-477918.svg" width="200">
-      <img id="paper" src="./assets/noun-hand-477922.svg" width="200">
-      <img id="scissors" src="./assets/noun-scissors-477919.svg" width="200">
     </section>
     <footer>
       <ul>
-        <li>Scissors by Cristiano Zoucas from <a href="https://thenounproject.com/browse/icons/term/scissors/" target="_blank" title="Scissors Icons">Noun Project</a> (CC BY 3.0)</li>
-        <li>Hand by Cristiano Zoucas from <a href="https://thenounproject.com/browse/icons/term/hand/" target="_blank" title="Hand Icons">Noun Project</a> (CC BY 3.0)</li>
         <li>Fist by Cristiano Zoucas from <a href="https://thenounproject.com/browse/icons/term/fist/" target="_blank" title="Fist Icons">Noun Project</a> (CC BY 3.0)</li>
+        <li>Hand by Cristiano Zoucas from <a href="https://thenounproject.com/browse/icons/term/hand/" target="_blank" title="Hand Icons">Noun Project</a> (CC BY 3.0)</li>
+        <li>Scissors by Cristiano Zoucas from <a href="https://thenounproject.com/browse/icons/term/scissors/" target="_blank" title="Scissors Icons">Noun Project</a> (CC BY 3.0)</li>
       </ul>
     </footer>
   </body>
