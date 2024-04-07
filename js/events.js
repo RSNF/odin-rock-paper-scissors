@@ -25,15 +25,17 @@ sect.addEventListener("click", function(e) {
             break;
     }
 
-    headingComputerChoice.textContent = `Computer's choice is ${computerSelection}`;
-    headingGameResult.textContent = `${playRound(playerSelection, computerSelection)}`;
+    if (playerSelection != "") {
+        headingComputerChoice.textContent = `Computer's choice is ${computerSelection}`;
+        headingGameResult.textContent = `${playRound(playerSelection, computerSelection)}`;
 
-    if (headingGameResult.textContent.startsWith("Lose!")) {
-        computerListItem.textContent = +computerListItem.textContent + 1;
-    } else {
-        playerListItem.textContent = +playerListItem.textContent + 1;
+        if (headingGameResult.textContent.startsWith("Lose!")) {
+            computerListItem.textContent = +computerListItem.textContent + 1;
+        } else {
+            playerListItem.textContent = +playerListItem.textContent + 1;
+        }
+
+        gameLog.appendChild(headingComputerChoice);
+        gameLog.appendChild(headingGameResult);
     }
-
-    gameLog.appendChild(headingComputerChoice);
-    gameLog.appendChild(headingGameResult);
 })
