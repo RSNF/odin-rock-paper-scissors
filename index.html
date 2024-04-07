@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
-        
-    </body>
-    <script src="script.js"></script>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper & Scissors Game</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Rock - Paper - Scissors</h1>
+    </header>
+    <section>
+      <h2>Play the game!</h2>
+      <h3>Players score</h3>
+      <ol>
+        <li class="player">0</li>
+        <li class="computer">0</li>
+      </ol>
+      <div>
+
+      </div>
+      <img id="rock" src="./assets/noun-fist-477918.svg" width="200">
+      <img id="paper" src="./assets/noun-hand-477922.svg" width="200">
+      <img id="scissors" src="./assets/noun-scissors-477919.svg" width="200">
+    </section>
+    <footer>
+      <ul>
+        <li>Scissors by Cristiano Zoucas from <a href="https://thenounproject.com/browse/icons/term/scissors/" target="_blank" title="Scissors Icons">Noun Project</a> (CC BY 3.0)</li>
+        <li>Hand by Cristiano Zoucas from <a href="https://thenounproject.com/browse/icons/term/hand/" target="_blank" title="Hand Icons">Noun Project</a> (CC BY 3.0)</li>
+        <li>Fist by Cristiano Zoucas from <a href="https://thenounproject.com/browse/icons/term/fist/" target="_blank" title="Fist Icons">Noun Project</a> (CC BY 3.0)</li>
+      </ul>
+    </footer>
+  </body>
+  <script type="module" src="./js/game.js"></script>
+  <script type="module" src="./js/events.js"></script>
 </html>
