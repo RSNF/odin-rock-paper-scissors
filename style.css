@@ -49,6 +49,10 @@ section > section {
     margin: 0px 50px;
 }
 
+.controls img:hover {
+    background-color: white;
+}
+
 footer {
     border-top: 2px solid black;
 }
